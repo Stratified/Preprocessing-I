@@ -4,56 +4,218 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@variable-dark: #787c91;
+@variable-light: #d4efff;
+@variable-darkText: #000d38;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(239, 246, 252);
 }
 
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1%;
+  color: @variable-darkText;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: @variable-darkText;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: @variable-dark;
+  width: 100%;
+  padding: 1%;
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  text-align: center;
+  padding: 4%;
+  color: @variable-darkText;
+  letter-spacing: 0.1rem;
+  word-spacing: 1.5rem;
+  margin-top: 10%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.projects {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects p {
+  color: @variable-darkText;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  padding: 2%;
+  margin: -2% 0%;
+  color: #4600a1;
+  transition: ease-in-out 1s;
+}
+
+nav a:hover {
+  color: darkred;
+}
