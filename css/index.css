@@ -134,6 +134,10 @@ body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
   background-color: #eff6fc;
+  overflow: hidden;
+}
+.container {
+  background-color: #c8e2ff;
 }
 h1 {
   font-size: 3rem;
@@ -161,7 +165,7 @@ footer p {
 p {
   font-size: 1.5rem;
 }
-li {
+.kae li {
   text-align: center;
   padding: 4%;
   color: #000d38;
@@ -173,6 +177,14 @@ li {
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
+  padding: 1% 0%;
+}
+.content :hover {
+  transition: ease-in-out 1s;
+  color: darkred;
+}
+.contentBox {
+  background-color: #b0d5ff;
 }
 .projects {
   width: 25%;
@@ -196,6 +208,23 @@ nav a {
   color: #4600a1;
   transition: ease-in-out 1s;
 }
-nav a:hover {
+a:hover {
   color: darkred;
+}
+.testimonials {
+  text-align: center;
+  margin-top: -5vh;
+}
+.testimonials :hover {
+  transition: ease-in-out 1s;
+  color: #0098df;
+}
+.testimonials ul {
+  padding: 1%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+.testimonialsBox {
+  padding: 15vh;
+  background-color: #c8e2ff;
 }
