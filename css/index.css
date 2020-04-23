@@ -136,20 +136,42 @@ body {
   background-color: #eff6fc;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow: inherit;
+  }
+}
 .container {
   background-color: #c8e2ff;
 }
-h1 {
+.container h1 {
   font-size: 3rem;
   text-align: center;
   padding: 1%;
   color: #000d38;
 }
-h2 {
+@media (max-width: 800px) {
+  .container h1 {
+    display: flex;
+    word-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25vw;
+    width: 50vw;
+    margin-bottom: 5vh;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+}
+.container h2 {
   font-size: 2.5rem;
   color: #000d38;
 }
-footer {
+.container footer {
   bottom: 0;
   position: fixed;
   display: flex;
@@ -158,14 +180,14 @@ footer {
   width: 100%;
   padding: 1%;
 }
-footer p {
+.container footer p {
   font-size: 1.2rem;
   color: white;
 }
-p {
+.container p {
   font-size: 1.5rem;
 }
-.kae li {
+.container .kae li {
   text-align: center;
   padding: 4%;
   color: #000d38;
@@ -173,33 +195,67 @@ p {
   word-spacing: 1.5rem;
   margin-top: 10%;
 }
-.content {
+.container .content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 5%;
   padding: 1% 0%;
 }
-.content :hover {
+@media (max-width: 800px) {
+  .container .content {
+    width: 100vw;
+  }
+}
+@media (max-width: 500px) {
+  .container .content {
+    width: 50vw;
+  }
+}
+.container .content :hover {
   transition: ease-in-out 1s;
   color: darkred;
 }
-.contentBox {
+.container .image {
+  margin-right: 5vw;
+}
+@media (max-width: 500px) {
+  .container .image {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container .image .image img :hover {
+  border: 5px white solid;
+}
+.container .contentBox {
   background-color: #b0d5ff;
 }
-.projects {
+.container .projects {
   width: 25%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.projects p {
+@media (max-width: 800px) {
+  .container .projects h2 {
+    margin-bottom: 5vh;
+  }
+}
+.container .projects p {
   color: #000d38;
 }
-nav {
+.container nav {
   display: flex;
   justify-content: center;
 }
-nav a {
+@media (max-width: 500px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.container nav a {
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
@@ -208,23 +264,29 @@ nav a {
   color: #4600a1;
   transition: ease-in-out 1s;
 }
-a:hover {
+@media (max-width: 500px) {
+  .container nav a {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+}
+.container a:hover {
   color: darkred;
 }
-.testimonials {
+.container .testimonials {
   text-align: center;
   margin-top: -5vh;
 }
-.testimonials :hover {
+.container .testimonials :hover {
   transition: ease-in-out 1s;
   color: #0098df;
 }
-.testimonials ul {
+.container .testimonials ul {
   padding: 1%;
   line-height: 2rem;
   font-size: 1.5rem;
 }
-.testimonialsBox {
+.container .testimonialsBox {
   padding: 15vh;
   background-color: #c8e2ff;
 }
